@@ -1,3 +1,7 @@
+<script type="text/javascript">
+	if (document.location.pathname == "/"){
+	document.location.replace("/uk");	}
+</script>
 <% @body_id = 'home-page' %>
 <% content_for :sidebar do %>
   <div data-hook="homepage_sidebar_navigation">
@@ -10,4 +14,3 @@
     <%= render partial: 'spree/shared/products', locals: { products: @products } %>
   <% end %>
 </div>
-
